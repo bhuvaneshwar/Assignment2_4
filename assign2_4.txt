@@ -1,0 +1,27 @@
+1. Explain the importance of Name node in Hadoop cluster
+
+	*Name node is the heart of Hadoop Distributed File System.
+
+	*Name node is a commodity hardware which contains Os and name node software.
+
+	*It is responsible for manage metadata about files distributed across the cluster.
+
+	*The system which will have the namenode will act as the master server. 
+
+	*It helps to manage the entire file system namespace. 
+
+	*This process reads all the metadata from a file named fsimage and keeps it in memory
+
+	*It periodically writes the changes in one file called edits as edit logs
+
+	*It implements the clients access to any files in the data node. 
+
+	*Namenode generally does not store the entire file in it but it keeps track of all the files in HDFS.
+
+	*Name node is the single point of failure for this hdfs cluster.
+
+	*When the name node goes down the entire system goed down for a particula time. 
+
+	*Since it is the heart of hdfs name node must be setup with good configuration.
+
+	
